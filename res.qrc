@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/ui">
+        <file>ui/bubble.png</file>
+        <file>ui/background.jpg</file>
+        <file>ui/sparkleSize.png</file>
+    </qresource>
+</RCC>
