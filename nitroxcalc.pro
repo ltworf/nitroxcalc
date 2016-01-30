@@ -4,30 +4,35 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += qml quick
+CONFIG += c++11
 
 TARGET = nitroxcalc
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    calc.cpp
+    calc.cpp \
 
-HEADERS  += mainwindow.h \
-    calc.h
-
-FORMS    += mainwindow.ui
+HEADERS  += calc.h
 
 CONFIG += mobility
 MOBILITY = 
 
 DISTFILES += \
-    Form.qml \
-    Bubble.qml
+    Bubble.qml \
+    Background.qml \
+    UI.qml \
+    FormLabel.qml
 
 RESOURCES += \
-    res.qrc
+    ui.qrc
+
+
+# Additional import path used to resolve QML modules in Qt Creator's code model
+QML_IMPORT_PATH =
+
+# Default rules for deployment.
+#include(deployment.pri)
+
 

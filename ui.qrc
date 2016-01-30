@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ui/background.jpg</file>
+        <file>ui/Background.qml</file>
+        <file>ui/bubble.png</file>
+        <file>ui/FormLabel.qml</file>
+        <file>ui/main.qml</file>
+        <file>ui/sparkleSize.png</file>
+        <file>ui/UI.qml</file>
+        <file>test.qml</file>
+    </qresource>
+</RCC>
