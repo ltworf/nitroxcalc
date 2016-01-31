@@ -16,8 +16,7 @@ SOURCES += main.cpp\
     calcwrapper.cpp
 
 HEADERS  += calc.h \
-    calcwrapper.h \
-    messageboard.h
+    calcwrapper.h
 
 CONFIG += mobility
 MOBILITY = 
