@@ -26,6 +26,7 @@ Background {
 
         TextInput {
             id: ean
+            inputMethodHints: Qt.ImhDigitsOnly
             text: '21'
             color: 'white'
             font.pointSize: 28
@@ -66,6 +67,7 @@ Background {
             id: depth
             text: '15'
             color: 'white'
+            inputMethodHints: Qt.ImhDigitsOnly
             font.pointSize: 28
             validator: IntValidator{bottom: 5; top: 66;}
             Layout.fillHeight: true
