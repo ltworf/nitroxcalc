@@ -4,7 +4,6 @@ import QtQuick.Layouts 1.2
 
 
 Background {
-
     GridLayout {
         columns: 2
         anchors.fill: parent
@@ -31,7 +30,7 @@ Background {
         }
 
         FormLabel {
-            text: ean.value*3 + 'm'
+            text: calc.mod(ean.text)+ 'm'
         }
 
         FormLabel {
@@ -39,7 +38,7 @@ Background {
         }
 
         FormLabel {
-
+            text: calc.bod(ean.text)+ 'm'
         }
 
         FormLabel {
@@ -49,10 +48,6 @@ Background {
         FormLabel {
 
         }
-
-
-
-
     }
 
 
