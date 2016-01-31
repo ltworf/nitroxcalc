@@ -20,9 +20,9 @@ Background {
 
         TextInput {
             id: ean
-            text: '20'
+            text: '21'
             font.pointSize: 32
-            validator: IntValidator{bottom: 20; top: 40;}
+            validator: IntValidator{bottom: 21; top: 40;}
         }
 
         FormLabel {
