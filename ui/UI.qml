@@ -9,9 +9,9 @@ Background {
         anchors.fill: parent
 
         FormLabel {
-            text: 'Lel'
             Layout.columnSpan: 2
-            anchors.centerIn: parent.Center
+            text: 'nitroxcalc'
+            font.pointSize: 42
         }
 
         FormLabel {
@@ -21,7 +21,8 @@ Background {
         TextInput {
             id: ean
             text: '21'
-            font.pointSize: 32
+            color: 'white'
+            font.pointSize: 28
             validator: IntValidator{bottom: 21; top: 40;}
         }
 
@@ -30,7 +31,7 @@ Background {
         }
 
         FormLabel {
-            text: calc.mod(ean.text)+ 'm'
+            text: calc.mod(ean.text)
         }
 
         FormLabel {
@@ -38,15 +39,27 @@ Background {
         }
 
         FormLabel {
-            text: calc.bod(ean.text)+ 'm'
+            text: calc.bod(ean.text)
         }
 
         FormLabel {
-            text: 'Equivalent air depth'
+            text: 'Depth'
+        }
+
+        TextInput {
+            id: depth
+            text: '15'
+            color: 'white'
+            font.pointSize: 28
+            validator: IntValidator{bottom: 5; top: 66;}
         }
 
         FormLabel {
+            text: 'Equiv. depth'
+        }
 
+        FormLabel {
+            text: calc.ead(ean.text, depth.text)
         }
     }
 

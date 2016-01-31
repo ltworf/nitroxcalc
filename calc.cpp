@@ -19,7 +19,7 @@ int best_operative_depth(int ean, unsigned int factors) {
     return best_depth(ean, factors+1);
 }
 
-int equivalent_air_depth(int ean,double depth) {
+int equivalent_air_depth(int ean, double depth) {
     //Amount of nitrogen in the mix. [0, 1]
     double n = 1-((double)ean/100);
     return (int)floor(((n*(depth+10)) / 0.79) - 10);
