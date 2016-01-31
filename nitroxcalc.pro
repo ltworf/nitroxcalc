@@ -13,17 +13,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     calc.cpp \
+    calcwrapper.cpp
 
-HEADERS  += calc.h
+HEADERS  += calc.h \
+    calcwrapper.h \
+    messageboard.h
 
 CONFIG += mobility
 MOBILITY = 
-
-DISTFILES += \
-    Bubble.qml \
-    Background.qml \
-    UI.qml \
-    FormLabel.qml
 
 RESOURCES += \
     ui.qrc
@@ -34,5 +31,7 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 #include(deployment.pri)
+
+DISTFILES +=
 
 
