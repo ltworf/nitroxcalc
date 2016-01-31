@@ -16,11 +16,7 @@
  * @return
  *  The equivalent depth on an air dive, in meters
  */
-static double equivalent_air_depth(double ean,double depth) {
-    //Amount of nitrogen in the mix. [0, 1]
-    double n = 1-(ean/100);
-    return ((n*(depth+10)) / 0.79) -10;
-}
+int equivalent_air_depth(int ean,double depth);
 
 /**
  * @brief maximum_operative_depth
@@ -31,7 +27,7 @@ static double equivalent_air_depth(double ean,double depth) {
  * @return
  *  expressed in meters
  */
-double maximum_operative_depth(double ean);
+int maximum_operative_depth(int ean);
 
 /**
  * @brief best_operative_depth
@@ -43,7 +39,7 @@ double maximum_operative_depth(double ean);
  *  margin by 0.1 atm
  * @return
  */
-double best_operative_depth(double ean, unsigned int factors = 0);
+int best_operative_depth(int ean, unsigned int factors = 0);
 
 #endif // CALC
 
