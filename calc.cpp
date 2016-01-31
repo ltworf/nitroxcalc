@@ -4,17 +4,19 @@
 
 #define MAX_PO2 1.6 //atm
 
-int maximum_operative_depth(int ean) {
+static int best_depth(int ean, double factors) {
     double o2 = (double)ean / 100;
-    double pressure = MAX_PO2 / o2;
+    double margin = (factors) / 10;
+    double pressure = (MAX_PO2 - margin) / o2;
     return (int)floor((pressure - 1) * 10);
 }
 
+int maximum_operative_depth(int ean) {
+    return best_depth(ean, 0);
+}
+
 int best_operative_depth(int ean, unsigned int factors) {
-    double o2 = (double)ean / 100;
-    double margin = (factors+1) / 10;
-    double pressure = (MAX_PO2 - margin) / o2;
-    return (int)floor((pressure - 1) * 10);
+    return best_depth(ean, factors+1);
 }
 
 int equivalent_air_depth(int ean,double depth) {
