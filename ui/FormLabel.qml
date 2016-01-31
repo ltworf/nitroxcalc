@@ -5,4 +5,5 @@ Text {
     color: 'yellow'
     horizontalAlignment: Text.AlignRight
     width: parent.width
+    height: parent.height
 }
