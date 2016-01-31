@@ -7,6 +7,5 @@
         <file>ui/main.qml</file>
         <file>ui/sparkleSize.png</file>
         <file>ui/UI.qml</file>
-        <file>test.qml</file>
     </qresource>
 </RCC>
