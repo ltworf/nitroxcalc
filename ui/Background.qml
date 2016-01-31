@@ -5,8 +5,8 @@ Rectangle {
     color: "#0170FE"
 
     Image {
-        width: 720
-        height: 480
+        width: 1162
+        height: 778
         source: "background.jpg"
         fillMode: Image.Pad
         anchors.centerIn: parent
