@@ -5,11 +5,9 @@ Rectangle {
     color: "#0170FE"
 
     Image {
-        width: 1162
-        height: 778
         source: "background.jpg"
-        fillMode: Image.Pad
-        anchors.centerIn: parent
+        fillMode: Image.PreserveAspectCrop
+        anchors.fill: parent
     }
 
     Timer {
