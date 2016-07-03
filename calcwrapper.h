@@ -11,10 +11,6 @@ public:
     Q_INVOKABLE QString mod(int ean);
     Q_INVOKABLE QString bod(int ean);
     Q_INVOKABLE QString ead(int ean, int depth);
-
-public slots:
-    //void refresh() {
-    //}
 };
 
 #endif // CALCWRAPPER_H

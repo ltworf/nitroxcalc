@@ -20,19 +20,9 @@ Rectangle {
         }
     }
 
-    Component.onCompleted: {
-        //particles.running = true;
-    }
-
     MouseArea {
         anchors.fill: parent
         acceptedButtons: Qt.LeftButton | Qt.RightButton
-        onClicked: {
-            //if (mouse.button == Qt.LeftButton)
-            //    particles.running = !particles.running
-            //else
-            //    particles.paused = !particles.paused;
-        }
     }
 
     ParticleSystem {
