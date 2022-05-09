@@ -1,0 +1,25 @@
+Source: nitroxcalc
+Section:
+Priority: optional
+Maintainer: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
+Build-Depends:
+ debhelper-compat (= 13),
+ qt5-qmake,
+ qtbase5-dev,
+ qttools5-dev-tools,
+ qtdeclarative5-dev
+Standards-Version: 4.6.0
+Homepage: https://github.com/ltworf/nitroxcalc
+Vcs-Browser: https://github.com/ltworf/nitroxcalc
+Rules-Requires-Root: no
+
+Package: nitroxcalc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ qml-module-qt-labs-settings,
+ qml-module-qtquick-window2,
+ qml-module-qtquick-controls2,
+ qml-module-qtquick-layouts,
+ qml-module-qtquick2
+Recommends: qtwayland5
+Description: Nitrox calculator
